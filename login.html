@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+    <link rel="stylesheet" href="style.css"/>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>TuneHive Login</title>
+</head>  
+<body>
+     <!-- Top Navigation -->
+<header class="navbar">
+  <h1 class="logo"><a href="index.html" class="logo"><img src="large.png" alt="TuneHive Logo"></h1></a>
+  <nav>
+    <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="music.html"><i class="fa-solid fa-list"></i> Music</a>
+    <a href="about_us.html"><i class="fa-solid fa-user"></i> About Us</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="login.html"><i class="fa-solid fa-user"></i> Login</a>
+    <a href="sign_up.html"><i class="fa-solid fa-user-pen"></i> Sign Up</a>
+    <a href="upload.html"><i class="fa-solid fa-cloud-arrow-up"></i> Upload</a>
+  </nav>
+</header>
+  <div class="login-box">
+ <h2>Login.</h2>
+     <form action="http://localhost:5000/login" method="POST"></form>
+<label for="email">
+<b>Email</b></label>
+ <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+<label for="psw">
+<b>Password</b></label>
+ <input type="password" placeholder="Enter password" name="psw" id="psw" required>
+
+<label for="psw-confirm">
+<b>Confirm password</b>
+</label>
+<input type="password" placeholder="Confirm password" name="psw-confirm" id="psw-confirm" required>
+
+<hr>
+
+<p>By loging into your account you agree to our <a href="terms_of_use.html">Terms & Conditions</a>.</p>
+ <button type="submit" class="login-button">Login</button>
+<div class="container sign in">
+ <p>Dont have an account? <a href="sign_up.html">Sign in</a>.</p>
+<div class="create-account"></div>
+</div>
+</div>
+</div>
+</form>
+</body>

@@ -1,0 +1,62 @@
+<html>
+<head>
+  <title>Explore Album</title>
+<body>
+   <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+    <div class="controls">
+  <!-- Search filter -->
+    <form id="search-form" role="search" action="/search" autocomplete="off">
+      <input class="form-control w-100" type="search" name="q" placeholder="Search for Music Album" value=""/><button><i class="search-icon fa-solid fa-search class"= "magnifying glass"></i></button>
+    </form>
+  <!-- Sort dropdown -->
+  <select id="sortSelect">
+    <option value="title">Sort by Title</option>
+    <option value="artist">Sort by Artist</option>
+    <option value="date">Sort by Date Added</option>
+  </select>
+</div>
+
+<!-- Playlist container -->
+<ul id="playlistContainer"></ul>
+
+<!-- 🌟 Explore Albums Section -->
+ <link rel="stylesheet" href="style.css">
+<section class="albums">
+  <h2>🎧 Explore Albums</h2>
+  <div class="album-grid">
+    <div class="album-card">
+      <img src="central cee.jpg" alt="Album Cover">
+      <h3>Doja</h3>
+      <p>Central Cee</p>
+      <audio preload="auto" controls>
+      <source src="doja.mp3"><button class="btn">▶ Play</button>
+      </audio>
+    </div>
+    <div class="album-card">
+      <img src="album2.jpg" alt="Album Cover">
+      <h3>Future Nostalgia</h3>
+      <p>Dua Lipa</p>
+      <button class="btn">▶ Play</button>
+    </div>
+    <div class="album-card">
+      <img src="album3.jpg" alt="Album Cover">
+      <h3>Midnights</h3>
+      <p>Taylor Swift</p>
+      <button class="btn">▶ Play</button>
+    </div>
+    <div class="album-card">
+      <img src="album4.jpg" alt="Album Cover">
+      <h3>Endless Summer</h3>
+      <p>Post Malone</p>
+      <button class="btn">▶ Play</button>
+    </div>
+  </div>
+</section>
+<script src="script.js" defer></script>
+</body>
+</head>
+</html>
+

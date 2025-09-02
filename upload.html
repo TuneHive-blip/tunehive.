@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+  <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Music</title>
+</head>
+<body>
+  <!-- Top Navigation -->
+<header class="navbar">
+  <h1 class="logo"><a href="index.html" class="logo"><img src="large.png" alt="TuneHive Logo"></h1></a>
+  <nav>
+    <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="music.html"><i class="fa-solid fa-list"></i> Music</a>
+    <a href="about_us.html"><i class="fa-solid fa-user"></i> About Us</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="login.html"><i class="fa-solid fa-user"></i> Login</a>
+    <a href="sign_up.html"><i class="fa-solid fa-user-pen"></i> Sign Up</a>
+    <a href="upload.html"><i class="fa-solid fa-cloud-arrow-up"></i> Upload</a>
+  </nav>
+</header>
+  <div class="upload-box">
+    <h2>Upload Your Music</h2>
+    <form>
+      <label for="title">Song Title</label>
+      <input type="text" id="title" placeholder="Enter song title" required>
+
+      <label for="artist">Artist Name</label>
+      <input type="text" id="artist" placeholder="Enter artist name" required>
+
+      <label for="genre">Genre</label>
+      <select id="genre" required>
+        <option value="">Select genre</option>
+        <option>Pop</option>
+        <option>Hip-Hop</option>
+        <option>Rock</option>
+        <option>Jazz</option>
+        <option>Electronic</option>
+      </select>
+
+      <label for="file">Upload File</label>
+      <input type="file" id="file" accept="audio/*" required>
+
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

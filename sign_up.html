@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuneHive Sign Up</title>
+ 
+</head>
+<body>
+  <!-- Top Navigation -->
+<header class="navbar">
+  <h1 class="logo"><a href="index.html" class="logo"><img src="large.png" alt="TuneHive Logo"></h1></a>
+  <nav>
+    <a href="index.html" class="active"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="music.html"><i class="fa-solid fa-list"></i> Music</a>
+    <a href="about_us.html"><i class="fa-solid fa-user"></i> About Us</a>
+    <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+    <a href="login.html"><i class="fa-solid fa-user"></i> Login</a>
+    <a href="sign_up.html"><i class="fa-solid fa-user-pen"></i> Sign Up</a>
+    <a href="upload.html"><i class="fa-solid fa-cloud-arrow-up"></i> Upload</a>
+  </nav>
+</header>
+  <div class="signup-box">
+    <h2>Sign up for TuneHive</h2>
+    <form action="http://localhost:5000/sign_up" method="POST">
+      <input type="email" placeholder="Email address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="text" placeholder="Username" required>
+
+      <label for="dob">Date of birth</label>
+      <input type="date" id="dob" required>
+
+      <div class="gender">
+        <label><input type="radio" name="gender" value="male"> Male</label>
+        <label><input type="radio" name="gender" value="female"> Female</label>
+        <label><input type="radio" name="gender" value="non-binary"> Non-binary</label>
+      </div>
+<p>By creating an account you agree to our <a href="terms_of_use.html">Terms & Conditions</a>.</p>
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="divider"></div>
+
+    <div class="login-link">
+      Already have an account? <a href="login.html">Log in</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
